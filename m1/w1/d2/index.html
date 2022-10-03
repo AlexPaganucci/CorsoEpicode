@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <meta name="description"
+        content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile.">
+</head>
+
+<body>
+    <header>
+        <img src="assets/img/logo.svg" alt="Logo Epicode" width="100px" height="100px">
+        <h1>Epicode - Il blog dei developers</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Articoli</a></li>
+            <li><a href="#">Job</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Come creare un templates per i post di Mario Rossi - pubblicato il 25-10-2020</h2>
+        <section>
+            <p>
+                La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da
+                applicare
+                a tutte le pagine <br> Le varie aree saranno quindi suddivise in:
+            </p>
+            <ul>
+                <li>Contenuti di intestazione del tag &lt;header&gt;</li>
+                <li>Contenuti centrali variabili del tag &lt;main&gt; (corpo principale)</li>
+                <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</li>
+                <li>Formattazione del codice</li>
+            </ul>
+        </section>
+        <section>
+            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i <abbr
+                    title="Cascade Style Sheet">CSS</abbr>. Perciò i passi saranno:</p>
+            <ul>
+                <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
+                <li>Scrivere l'<abbr title="Hyper Text Markup Language">HTML</abbr> dai tag esterni a quelli interni e
+                    dall'alto verso il basso</li>
+                <li>Applicare gli stili <abbr title="Cascade Style Sheet">CSS</abbr></li>
+                <li>L'applicazione di stili <abbr title="Cascade Style Sheet">CSS</abbr> è cresciuta negli anni fino a
+                    raggiungere la diffusione pressoché totale.</li>
+            </ul>
+        </section>
+        <table>
+            <caption>Diffusione dei <abbr title="Cascade Style Sheet">CSS</abbr></caption>
+            <thead>
+                <th>Anno</th>
+                <th>&percnt; di utilizzo</th>
+                <th>Supporto browsers</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2000</td>
+                    <td>20&percnt;</td>
+                    <td>17&percnt;</td>
+                </tr>
+                <tr>
+                    <td>2002</td>
+                    <td>35&percnt;</td>
+                    <td>22&percnt;</td>
+                </tr>
+                <tr>
+                    <td>2004</td>
+                    <td>45&percnt;</td>
+                    <td>42&percnt;</td>
+                </tr>
+                <tr>
+                    <td>2008</td>
+                    <td>80&percnt;</td>
+                    <td>51&percnt;</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>100&percnt;</td>
+                    <td>76&percnt;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Un test di validazione potrà essere fatto tramite il <a href="https://validator.w3.org/">tool online</a>
+            dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati
+            dei veri developers come loro:</p>
+        <iframe width="885" height="498" src="https://www.youtube.com/embed/pnNCvnlmJXg"
+            title="EPICODE - Impara a programmare e avvia la tua carriera nel tech" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </main>
+    <div>
+        <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+        <form action="" method="post">
+            <legend>Newsletter</legend>
+            <input type="email" id="email" name="email" placeholder="Inserisci la tua mail">
+            <label for="email">Email</label>
+            <button type="submit">Iscriviti!</button>
+        </form>
+    </div>
+    <aside>
+        <div>
+            <p>
+                <a href="#">Articoli correlati</a><br>
+                Validare il codice <abbr title="Hyper Text Markup Lenguage">HTML</abbr><br>
+                Categoria: develop<br>
+                Data: 18-9-2020
+            </p>
+            <p>
+                <a href="#">Correggere la sintassi</a><br>
+                Categoria: develop<br>
+                Data: 16-9-2020
+            </p>
+            <p>
+                <a href="#">Meno kb nella pagina</a><br>
+                Categoria: ottimizzazione<br>
+                Data: 30-9-2020
+            </p>
+        </div>
+    </aside>
+    <footer>
+        <div>
+            (copyright e info) <br>
+            Blog Epicode &copy;2021
+        </div>
+        <p>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA
+            00112233. <a href="mailto: info@epicode.school">info@epicode.school</a>.
+        </p>
+    </footer>
+</body>
+
+</html>
