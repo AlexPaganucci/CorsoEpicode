@@ -1,0 +1,126 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #393d41;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    text-align: center;
+}
+h1, h2, h3, h4{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+    font-weight: bold;
+}
+/* HEADER */
+header{
+    background-color: black;
+    text-align: center;
+    padding: 40px;
+}
+header img{
+    width: 40%;
+}
+/* MAIN */
+#sezprinc{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200%;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+#sezprinc h1{
+    font-size: 40px;
+    line-height: 100%;
+}
+#sezprinc p{
+    padding: 30px 20px 40px 20px;
+}
+#sezprinc button{
+    padding: 15px 50px;
+    background-color: #f04c2f;
+    border-style: none;
+    border-radius: 5px;
+}
+button a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+section h3{
+    padding: 20px;
+}
+section p{
+    padding: 0 40px;
+}
+main div{
+    width: 70vw;
+    height: 70vw;
+    background-image: url(../images/notebook.jpg);
+    border-radius: 50%;
+    margin: 30px auto 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#testimonianze{
+    background-color: #e22d0e;
+    padding: 50px 20px;
+    margin: 70px auto;
+    color: white;
+}
+#testimonianze h2{
+    color: white;
+    font-size: xx-large;
+    padding-bottom: 20px;
+}
+#testimonianze blockquote{
+    font-style: italic;
+    padding-bottom: 20px;
+}
+cite{
+    font-size: small;
+}
+cite p{
+    font-size: x-large;
+}
+/* ASIDE */
+aside section{
+    border: 1px solid #dee1e3;
+    margin: 30px;
+    padding-bottom: 40px;
+}
+aside section img{
+    width: 100%;
+}
+aside h4{
+    padding: 10px;
+}
+/* FOOTER */
+#contatti{
+    background-color: #25a2c3;
+    color: white;
+    margin-top: 70px;
+    padding: 20px 20px 50px 20px;
+}
+#contatti a{
+    color: white;
+}
+#contatti h2{
+    color: white;
+    font-size: xx-large;
+    padding: 20px;
+}
+#contatti div{
+    padding-bottom: 20px;
+    font-weight: lighter;
+
+}
+#contatti hr{
+    width: 200px;
+}
+hr+p{
+    font-size: medium;
+    padding: 20px;
+    font-weight: lighter;
+}
