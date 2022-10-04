@@ -22,6 +22,10 @@ header {
     box-shadow: 0 3px 3px #444;
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
 }
 header div img {
     margin-bottom: 20px;
@@ -31,6 +35,8 @@ header nav ul {
 }
 header nav li {
     list-style: none;
+    display: inline;
+    padding: 0 20px;
 }
 header nav li a {
     color: white;
@@ -44,6 +50,9 @@ header nav li a::before {
 }
 
 /* MAIN */
+.icon1{
+    
+}
 main {
     background-color: #fff;
     box-shadow: 0 3px 3px #444;
@@ -77,6 +86,20 @@ p, address, ul, ol, dl, blockquote {
 h1 + p {
     color: #a0a0a0;
 }
+article img{
+    padding: 0.2em;
+    border: 4px solid #479DC3;
+    outline: 4px solid #88336E;
+    float: left;
+    margin-right: 1.2em;
+    width: 25%;
+    max-width: 30%;
+}
+
+.logo-html img{
+    width: 100%;
+    height: auto;
+}
 ul, ol {
     margin-left: 2em;
 }
@@ -103,6 +126,7 @@ iframe {
 /* TABELLE */
 table {
     margin-bottom: 2em;
+    font-size: 2rem;
 }
 caption {
     font-weight: bold;
@@ -130,6 +154,17 @@ tbody tr:last-of-type {
 }
 
 /* FORM */
+section{
+    position: relative;
+    padding-top: 50px;
+}
+section h2{
+    position: absolute;
+    box-shadow: 1px 1px 5px #333;
+    top: -15px;
+    background-color: #a0a0a0;
+    padding: 0 2em;
+}
 input {
     padding: 5px;
     border: 0;
@@ -177,4 +212,27 @@ footer {
 }
 footer a {
     color: fuchsia;
+}
+.icon1{
+    position: fixed;
+    top: 35vh;
+    right: -7px;
+}
+.icon2{
+    position: fixed;
+    top: 45vh;
+    right: -7px;
+}
+.icon3{
+    position: fixed;
+    right: -7px;
+    top: 65vh;
+}
+.icon1 a, .icon2 a{
+    color: rgb(45, 101, 185);
+    font-size: 4rem;   
+}
+.icon3 a{
+    color: #c77ea2;
+    font-size: 4rem;
 }
