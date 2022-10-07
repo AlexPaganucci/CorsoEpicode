@@ -227,9 +227,6 @@ form legend {
 
 /* RESPONSIVE */
 @media screen and (min-width: 768px) {
-    header{
-        /* flex-wrap: nowrap; */
-    }
     header nav { 
         overflow: visible;
         width: 100%;
