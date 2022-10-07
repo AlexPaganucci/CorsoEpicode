@@ -1,0 +1,282 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+    line-height: 1.8;
+}
+
+.button {
+    background-image: linear-gradient(0.25turn, #6cc1e2, #392f7a);
+    font-size: 1.9rem;
+    color: white;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.lni {
+    color: #e42424;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin: 40px 20px 40px 20px;
+    text-align: center;
+}
+
+/* HEADER */
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 5px #d3d3d3;
+    background-color: white;
+}
+.containerHeader ul li{
+    display: inline;
+    padding: 20px;
+    font-size: 0.5rem;
+}
+#logo{
+    padding: 20px;
+}
+#linkButton{
+    padding: auto;
+}
+#linkButton a{
+    color: white;
+}
+/* MAIN */
+main #principalSection {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200%;
+    padding: 20px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 5px black;
+    color: white;
+}
+
+#principalSection p {
+    margin-bottom: 30px;
+}
+
+#principalSection button {
+    margin-bottom: 100px;
+}
+
+.contentSection {
+    text-align: center;
+    padding: 0 20px 40px 20px;
+}
+
+h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.contentSection h3 {
+    font-size: 2.7rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.contentSection p {
+    margin-bottom: 20px;
+}
+
+.contentSection .icon {
+    font-size: 2em;
+}
+
+#scrivici {
+    background-color: #0c0633;
+    color: white;
+    padding: 120px 20px 120px 20px;
+}
+
+.flex2 img {
+    margin: 50px 0 20px 0;
+    width: 100%;
+}
+
+table {
+    margin: 10px 20px 40px 20px;
+}
+
+tr td:nth-child(1) {
+    font-weight: bold;
+    width: 200px;
+}
+
+tr td {
+    padding: 10px;
+}
+
+table caption {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+tr:nth-child(1) {
+    background-color: #d2dce7;
+}
+
+tr:nth-child(2) {
+    background-color: #d2dce7;
+}
+
+tr:nth-child(3) {
+    background-color: #d2dce7;
+}
+
+tr:nth-child(7) {
+    background-color: #d2dce7;
+}
+
+tr:nth-child(8) {
+    background-color: #d2dce7;
+}
+
+tr:nth-child(9) {
+    background-color: #d2dce7;
+}
+
+#contatti {
+    width: 80%;
+    margin: 0 auto;
+}
+
+fieldset input {
+    margin-bottom: 20px;
+}
+
+#textarea {
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+.collegamenti, .slogan {
+    background-color: rgb(238, 238, 238);
+    padding: 50px;
+}
+
+.collegamenti h3 {
+    font-size: 1.5em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.collegamenti p {
+    margin-bottom: 20px;
+}
+
+.collegamenti .lni {
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+fieldset input {
+    padding: 10px;
+    font-size: 1.9rem;
+}
+
+form legend {
+    margin-bottom: 20px;
+}
+
+.slogan {
+    font-size: 1rem;
+}
+
+#newsletter {
+    margin-bottom: 0px;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 768px) {
+    .containerHeader ul li{
+        font-size: 1rem;
+    }
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left p {
+        text-align: left;
+    }
+
+    .contentSection img {
+        margin-right: 10px;
+        max-width: 50%;
+        height: auto;
+    }
+
+    .flex p {
+        text-align: left;
+    }
+
+    .left {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    #section2 {
+        padding: 20px;
+    }
+
+    .flex2 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .flex2 div img {
+        min-width: 50%S;
+    }
+    tbody tr{
+             
+    }
+    .flex2 #contatti{
+        padding-left: 30px;
+    }
+    .flex2 .contentSection{
+        padding: 0 50px;
+        margin-left: 150px;
+    }
+    .contentSection address{
+        padding-bottom: 20px;
+    }
+    .slogan {
+        display: flex;
+        padding-top: 0px;
+        justify-content: center;
+    }
+    .collegamenti{
+        justify-content: space-between;
+    }
+    .collegamenti div{
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 1170px){
+    .flex, .flex2{
+        padding: 0 100px;
+    }
+}
