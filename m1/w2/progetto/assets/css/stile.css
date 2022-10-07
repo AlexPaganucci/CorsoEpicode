@@ -30,29 +30,44 @@ h1 {
 
 /* HEADER */
 header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
-    display: flex;
-    width: 100%;
-    height: 100px;
-    justify-content: space-around;
-    align-items: center;
+    z-index: 1;
     box-shadow: 2px 2px 5px #d3d3d3;
-    background-color: white;
-}
-.containerHeader ul li{
-    display: inline;
-    padding: 20px;
-    font-size: 0.5rem;
+    flex-wrap: wrap;
 }
 #logo{
     padding: 20px;
 }
-#linkButton{
-    padding: auto;
+header nav {
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        transition: height 0.5s ease-out;
 }
-#linkButton a{
-    color: white;
+nav ul li{
+    list-style-type: none;
+}
+ul li a{
+    color: #e42424;
+}
+#menuBtn {
+    display: none;
+}
+#menuBtn:checked ~ nav {
+   height: 220px; 
+}
+header label{
+    position: relative;
+    font-size: 2em;
+    right: 40px;
+    top: -15px;
+    color: #e42424;
 }
 /* MAIN */
 main #principalSection {
@@ -212,6 +227,21 @@ form legend {
 
 /* RESPONSIVE */
 @media screen and (min-width: 768px) {
+    header{
+        flex-wrap: nowrap;
+    }
+    header nav { 
+        overflow: visible;
+        width: 100%;
+        position: absolute;
+        text-align: right;
+        top: 15px;
+    }
+    header nav ul li{
+        display: inline;
+        color: black;
+        
+    }
     .containerHeader ul li{
         font-size: 1rem;
     }
@@ -250,9 +280,6 @@ form legend {
     .flex2 div img {
         min-width: 50%S;
     }
-    tbody tr{
-             
-    }
     .flex2 #contatti{
         padding-left: 30px;
     }
@@ -263,6 +290,10 @@ form legend {
     .contentSection address{
         padding-bottom: 20px;
     }
+    /* tbody{
+        display: flex;
+        width: 33%;
+    } */
     .slogan {
         display: flex;
         padding-top: 0px;
