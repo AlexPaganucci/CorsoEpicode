@@ -43,13 +43,9 @@ document.getElementById('torta').innerHTML = ricettaTorta();
 
 //form
 document.getElementById('calcola').addEventListener('click', function calcoloSpesa(){
-var cibo = document.getElementById('cibo').value
-var detersivi = document.getElementById('detersivi').value
-var abiti = document.getElementById('abiti').value
-
-parseFloat(cibo);
-parseFloat(detersivi);
-parseFloat(abiti);
+var cibo = parseFloat (document.getElementById('cibo').value);
+var detersivi = parseFloat (document.getElementById('detersivi').value);
+var abiti = parseFloat (document.getElementById('abiti').value);
 
 const spesa = cibo + detersivi + abiti;
 document.getElementById('totale').innerHTML += spesa;
