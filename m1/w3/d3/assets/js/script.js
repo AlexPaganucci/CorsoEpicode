@@ -54,3 +54,4 @@ document.getElementById('totale').innerHTML += spesa;
 
 
 
+
