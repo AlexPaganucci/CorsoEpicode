@@ -23,7 +23,7 @@ h1{
 }
 #screen{
     text-align: right;
-    width: 250px;
+    width: 310px;
     height: 50px;
     color: rgb(28, 47, 47);
     margin-bottom: 5px;
@@ -43,10 +43,14 @@ button{
     box-shadow: 5px 5px 5px black;
     border-radius: 50%;
 }
-.uguale{
-    width: 115px;
-}
+
 button:active{
     box-shadow: 2px 2px 5px black;
     transform: scale(0.8);
+}
+.largo{
+    width: 115px;
+}
+.uguale{
+    width: 180px;
 }
