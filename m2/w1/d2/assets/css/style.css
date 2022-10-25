@@ -1,0 +1,10 @@
+body{
+    background-image: linear-gradient(to left top, rgb(255, 106, 0), rgb(160, 45, 0), rgb(255, 106, 0));
+    text-align: center;
+}
+h1 {
+    color: white;
+}
+li{
+    list-style-type: none;
+}
