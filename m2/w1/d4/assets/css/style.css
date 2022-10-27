@@ -1,0 +1,33 @@
+#menuBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+}
+.menuOpen {
+    height: 90px;
+}
+.menuSecondario{
+    background-color: rgb(0, 149, 199);
+}
+.titoloIniziale{
+    color: yellow;
+    text-align: center;
+}
+ul li{
+    cursor: pointer;
+}
+
+.cancella{
+    text-decoration: line-through;
+}
