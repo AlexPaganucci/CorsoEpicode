@@ -1,0 +1,7 @@
+@function sizing ($f){
+    @return $f*3;
+}
+
+@function font-size ($s){
+    @return 14px*$s;
+}

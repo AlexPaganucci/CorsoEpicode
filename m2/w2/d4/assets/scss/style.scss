@@ -1,0 +1,90 @@
+@import "variabili";
+@import "mixin";
+@import "function";
+
+body{
+    font-size: font-size($s:1);
+}
+#main-menu {
+    ul{
+        background-color: $bg-header;
+        box-shadow: 1px 1px 5px 2px;
+        border-radius: 10px;
+        padding: $padding;
+        li{
+            display: inline-block;
+            list-style-type: none;
+            margin-inline: 10px;
+            a{
+                color: $text-ter;
+                text-decoration: none;
+            }
+        }
+    }
+}
+#main{
+    display: flex;
+    @include small-screen {
+        flex-direction: column-reverse;
+    }
+    h1{
+        font-size: font-size($s:2);
+    }
+    h2{
+        font-size: font-size($s:1.5);
+    }
+    a{
+        color: $text-secondary;
+        text-decoration: none;
+        &:hover{
+            color: $text-hover;
+        }
+    }
+    button{
+        background-color: $text-secondary;
+        color: $text-ter;
+        border: 2px outset;
+        &:hover{
+            background-color: $text-hover;
+        }
+    }
+}
+#content{
+    width: 75%;
+    margin-inline: sizing($f:80px);
+    @include large-screen {
+        margin-inline: sizing($f:20px);
+    }
+    @include small-screen {
+        margin-inline: sizing($f:10px);
+        width: 80%;
+    }
+}
+#sidebar{
+    width: 40%;
+    margin-right: sizing($f:20px);
+    @include small-screen {
+    width: 100%;
+    }
+    ul{
+        padding-inline-start: 0;
+        @include small-screen {
+            margin-inline: sizing($f:10px);
+            padding-inline-start: 40px;
+            width: 50%;
+        }
+        li{
+            font-size: font-size($s:1.5);
+            list-style-type: none;
+            border-bottom: 1px dotted lightgray;
+            &:hover{
+                background-color: $bg-list;
+                color: $text-ter;
+            }
+        }
+    }
+}
+#footer{
+    background-color: $bg-footer;
+    height: 80px;
+}
