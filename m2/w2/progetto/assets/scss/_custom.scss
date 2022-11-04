@@ -1,0 +1,66 @@
+#navbarMia{
+    background: linear-gradient(to top, $bg-color-primary,$bg-color-secondary);
+    padding-inline: sizing($f:5px);
+    @include breakpoint{
+        padding-inline: sizing($f:12px);
+    }
+}
+
+#back-img{
+    background-image: url(../img/pexels-aleksandar-pasaric-325185.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    margin-top: sizing($f:15px);
+    padding-inline: sizing($f:8px);
+    @include breakpoint{
+        padding-inline: sizing($f:12px);
+    }
+    button{
+        background: linear-gradient(to top, $bg-color-primary,$bg-color-secondary);
+    }
+}
+
+#section2{
+    color: text-color($bg-color-terciary);
+    background-color: $bg-color-terciary;
+    padding-top: sizing($f:10px);
+    padding-inline: sizing($f:8px);
+    @include breakpoint{
+        padding-inline: sizing($f:12px);
+    }
+}
+#aside1{
+    padding-inline: sizing($f:8px);
+    @include breakpoint{
+        padding-inline: sizing($f:12px);
+    }
+    h2{
+        margin-bottom: sizing($f:8px);
+        @include breakpoint{
+            margin-bottom: sizing($f:12px);
+        }
+    }
+    #partnerships{
+        img{
+            margin-bottom: sizing($f:8px);
+        }
+    }
+}
+#aside2{
+    padding-inline: sizing($f:8px);
+    @include breakpoint{
+        padding-inline: sizing($f:12px);
+    }
+    h2{
+        margin-bottom: sizing($f:15px);
+    }
+}
+
+footer{
+    padding: sizing($f:12px);
+    @include breakpoint{
+        padding-inline: sizing($f:12px);
+    }
+    background: linear-gradient(to top, $bg-color-primary,$bg-color-secondary);
+}
