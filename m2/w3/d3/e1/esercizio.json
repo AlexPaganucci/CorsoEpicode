@@ -1,0 +1,163 @@
+{
+    "utenti": [
+        {
+            "id": 1,
+            "nome": "Alex",
+            "cognome": "Paganucci"
+        },
+        {
+            "id": 2,
+            "nome": "Andrea",
+            "cognome": "Cursi"
+        },
+        {
+            "id": 3,
+            "nome": "Francesco",
+            "cognome": "Bossoli"
+        },
+        {
+            "id": 3,
+            "nome": "Francesco",
+            "cognome": "Lisena"
+        },
+        {
+            "id": 4,
+            "nome": "Giulia",
+            "cognome": "Franzosi"
+        },
+        {
+            "id": 5,
+            "nome": "Giulio",
+            "cognome": "tomè"
+        },
+        {
+            "id": 6,
+            "nome": "Lorenzo",
+            "cognome": "Altomonte"
+        },
+        {
+            "id": 7,
+            "nome": "Marco",
+            "cognome": "Brandi"
+        },
+        {
+            "id": 8,
+            "nome": "Maurizio",
+            "cognome": "Villanova"
+        },
+        {
+            "id": 9,
+            "nome": "David",
+            "cognome": "Gualberto"
+        },
+        {
+            "id": 10,
+            "nome": "Davide",
+            "cognome": "Alfonsi"
+        },
+        {
+            "id": 11,
+            "nome": "Ewelina",
+            "cognome": "Czaja"
+        },
+        {
+            "id": 12,
+            "nome": "Francesco",
+            "cognome": "Lisena"
+        },
+        {
+            "id": 13,
+            "nome": "Gennaro",
+            "cognome": "Notaro"
+        },
+        {
+            "id": 14,
+            "nome": "Ilaria",
+            "cognome": "Cognata"
+        },
+        {
+            "id": 15,
+            "nome": "Lorenzo",
+            "cognome": "Ciarcianelli"
+        },
+        {
+            "id": 16,
+            "nome": "Lorenzo",
+            "cognome": "De Carolis"
+        },
+        {
+            "id": 16,
+            "nome": "Marta",
+            "cognome": "Liguori"
+        },
+        {
+            "id": 16,
+            "nome": "Paolo",
+            "cognome": "Russo"
+        }
+    ],
+    "libri": [
+        {
+            "id": 1,
+            "titolo": "Orgoglio e pregiudizio",
+            "autore": "Jane Austen"
+        },
+        {
+            "id": 2,
+            "titolo": "Decameron",
+            "autore": "Giovanni Boccaccio"
+        },
+        {
+            "id": 3,
+            "titolo": "Cime tempestose",
+            "autore": "Emily Brontè"
+        },
+        {
+            "id": 4,
+            "titolo": "La metamorfosi",
+            "autore": "Frenk Kafka"
+        },
+        {
+            "id": 5,
+            "titolo": "La montagna incantata",
+            "autore": "Thomas Mann"
+        },
+        {
+            "id": 6,
+            "titolo": "Moby Dick",
+            "autore": "Herman Melville"
+        }
+    ],
+    "film": [
+        {
+            "id": 1,
+            "nome": "Odissea nello spazio",
+            "regista": "Stanley Kubrick"
+        },
+        {
+            "id": 2,
+            "nome": "Avatar",
+            "regista": "James Cameron"
+        },
+        {
+            "id": 3,
+            "nome": "C'era una volta il West",
+            "regista": "Sergio Leone"
+        },
+        {
+            "id": 4,
+            "nome": "City of God",
+            "regista": "Fernando Meirelles"
+        },
+        {
+            "id": 5,
+            "nome": "Guerre stellari",
+            "regista": "George Lucas"
+        },
+        {
+            "id": 6,
+            "nome": "Luci della città",
+            "regista": "Charlie Chaplin"
+        }
+    ]
+}
