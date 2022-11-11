@@ -1,0 +1,39 @@
+{
+  "elenco": [
+    {
+      "nome": "Paolo",
+      "cognome": "Russo",
+      "id": 6
+    },
+    {
+      "nome": "Alex",
+      "cognome": "Paganucci",
+      "id": 7
+    },
+    {
+      "nome": "Lorenzo",
+      "cognome": "Ciarcianelli",
+      "id": 9
+    },
+    {
+      "nome": "Francesco",
+      "cognome": "Bossoli",
+      "id": 10
+    },
+    {
+      "nome": "Gennaro",
+      "cognome": "Notaro",
+      "id": 11
+    },
+    {
+      "nome": "Maurizio",
+      "cognome": "Villanova",
+      "id": 12
+    },
+    {
+      "nome": "Francesco",
+      "cognome": "Lisena",
+      "id": 13
+    }
+  ]
+}
