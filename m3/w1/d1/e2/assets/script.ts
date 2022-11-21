@@ -1,0 +1,25 @@
+class SonAccount{
+    balance: number;
+    constructor(_balanceInit:number = 0){
+        this.balance = _balanceInit;
+    }
+    deposit(amount:number) {
+        this.balance += amount;
+    }
+    withDraw(amount:number) {
+        this.balance -= amount;
+    }
+}
+
+class MotherAccount extends SonAccount{
+    balance: number;
+    constructor(_balanceInit:number = 0){
+        super(_balanceInit)
+    }
+    private addInterest(){
+        this.balance = this.balance+((this.balance*10)/100);
+    }
+}
+
+var newSonAccount = new SonAccount(100);
+var newMotherAccount = new MotherAccount(80);
