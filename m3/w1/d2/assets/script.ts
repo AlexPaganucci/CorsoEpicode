@@ -5,9 +5,11 @@ class SonAccount{
     }
     deposit(amount:number) {
         this.balance += amount;
+        return this.balance;
     }
     withDraw(amount:number) {
         this.balance -= amount;
+        return this.balance;
     }
 }
 
@@ -18,6 +20,7 @@ class MotherAccount extends SonAccount{
     }
     private addInterest(){
         this.balance = this.balance+((this.balance*10)/100);
+        return this.balance;
     }
 }
 
