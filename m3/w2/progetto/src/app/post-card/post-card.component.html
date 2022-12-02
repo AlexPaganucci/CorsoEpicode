@@ -1,0 +1,9 @@
+<div class="card">
+    <h5 class="card-header" appEvidenzia="'yellow'">{{p.id}}</h5>
+    <div class="card-body">
+        <h5 class="card-title">{{p.title | maiuscolo}}</h5>
+        <p class="card-text">{{p.body}}</p>
+        <button class="btn btn-danger" (click)="elimina()">Elimina</button>
+    </div>
+    <ng-content></ng-content>
+</div>
