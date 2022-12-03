@@ -14,8 +14,8 @@ export class UsersComponent implements OnInit {
   users:User[]=[]
 
   ngOnInit(): void {
-    this.userSrv.addUser().then((res) => {
-    this.users = res
+    this.userSrv.addUsers().then((res) => {
+    this.users = res;
     })
   }
 }

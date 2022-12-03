@@ -10,18 +10,18 @@ export class UserService {
 
   constructor() { }
 
-  addUser() {
+  addUsers() {
     return fetch("http://localhost:3000/Users").then(res=>res.json()).then(res=>{
       this.users = res;
       return this.users
     })
   }
 
-  // addUserById(id:number){
-  //   return fetch("http://localhost:3000/Users").then(res=>res.json()).then(res=>{
-  //     this.users =res;
-  //     return this.users.find(user=>user.id==id);
-  //   })
-  // }
+  addUserById(id:number){
+    return fetch("http://localhost:3000/Users").then(res=>res.json()).then(res=>{
+      this.users =res;
+      return this.users.find(user=>user.id==id);
+    })
+  }
 
 }

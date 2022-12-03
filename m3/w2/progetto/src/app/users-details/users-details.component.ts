@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 import { User } from '../user';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-users-details',
@@ -8,12 +9,13 @@ import { User } from '../user';
   styleUrls: ['./users-details.component.scss'],
 })
 export class UsersDetailsComponent implements OnInit {
-  user!: User;
-  id!: number;
-  constructor(private userSrv: UserService) {}
+  user: User | undefined;
+  constructor(private userSrv: UserService, private ar: ActivatedRoute) {}
 
   ngOnInit(): void {
-    //leggere id dall'url - nel sservice creare una fetch
-    //this.user = this.userSrv.recuper utenteID;
+    let p = this.ar.snapshot.params['id'];
+    this.userSrv.addUserById(p).then((res) => {
+      this.user = res;
+    });
   }
 }

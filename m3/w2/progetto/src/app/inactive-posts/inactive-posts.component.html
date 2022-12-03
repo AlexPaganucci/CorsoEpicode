@@ -1,4 +1,3 @@
 <app-post-card *ngFor="let post of posts" [p]="post" (eliminaEvent)="elimina(post.id)">
-  <button class="btn btn-primary" [routerLink]="['/active/false',post.id]">Dettagli</button>
-  <button class="btn btn-success" (click)="attiva(post.id)">Attiva</button>
+  <button class="btn btn-primary" [routerLink]="['/active/false', post.id]">Dettagli</button>
 </app-post-card>
