@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;" *ngIf="photo != undefined">
+  <img src="{{photo.url}}" class="card-img-top">
+  <div class="card-body">
+    <p class="card-text">{{photo.title}}</p>
+    <button class="btn btn-danger" (click)="elimina()">Elimina</button>
+    <button class="btn btn-primary">Mi piace</button>
+  </div>
+</div>
