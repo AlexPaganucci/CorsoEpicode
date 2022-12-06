@@ -1,0 +1,35 @@
+<div class="container mt-3">
+  <h1 class="text-center">Reacting from hero</h1>
+  <div class="row">
+    <div class="col">
+      <form [formGroup]="form">
+        <div formGroupName="heroInfo">
+          <label for="nome">Nome</label>
+          <input type="text" formControlName="nome" id="nome" class="form-control">
+          <span *ngIf="getFormC('heroInfo.nome')?.invalid && getFormC('heroInfo.nome')?.touched">
+            <ng-container *ngIf="getErrorsC('heroInfo.nome', 'required')">
+              campo nome obbligatorio
+            </ng-container>
+          </span>
+          <div class="form-group">
+            <label for="alterEgo">AlterEgo</label>
+            <input type="text" id="alterEgo" class="form-control" formControlName="alterEgo" >
+            <span *ngIf="getFormC('heroInfo.alterEgo')?.invalid && getFormC('heroInfo.alterEgo')?.touched">
+              <ng-container *ngIf="getErrorsC('heroInfo.alterEgo', 'required')">
+                campo alterEgo obbligatorio
+              </ng-container>
+            </span>
+          </div>
+        </div>
+        <div class="mb-3" formArrayName="superPower">
+          <h3>Super poteri</h3>
+          <button type="button" (click)="aggiungiSuperPower()" class="btn btn-primary">Aggiungi superpower</button>
+          <div class="form-group mb-2" *ngFor="let sp of superPowers(); let i = index">
+            <input type="text" class="form-control" [formControlName]="i">
+          </div>
+        </div>
+        <button type="submit" (click)="submit()" class="btn btn-primary">Invia</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="container">
+  <h2 class="text-center">TD from hero</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <form (ngSubmit)="submit()" #f="ngForm">
+          <div ngModelGroup="heroInfo" id="heroInfo" #heroGroup="ngModelGroup">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" [ngModel]="heroForm.heroName" name="nome" class="form-control" required #heroName="ngModel">
+              <p *ngIf="heroName.invalid && heroName.touched" class="alert alert-danger">
+                Questo campo è obbligatorio
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="alterEgo">alterEgo</label>
+              <input type="text" id="alterEgo" name="alterEgo" [ngModel]="heroForm.alterEgo" class="form-control" required #alterEgo="ngModel">
+              <p *ngIf="alterEgo.invalid && alterEgo.touched" class="alert alert-danger">
+                Questo campo è obbligatorio
+              </p>
+            </div>
+            <div>
+              <label for="superPower">Superpotere</label>
+              <select name="superPower" id="superPower" [ngModel]="heroForm.superPower" class="form-select mb-2">
+                <option value="superforza">Superforza</option>
+                <option value="raggilaser">Raggilaser</option>
+                <option value="supervelocita">Supervelocità</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="nemico">Nemico</label>
+              <input type="text" id="nemico" name="nemico" [ngModel]="heroForm.nemico" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="Pianeta">Pianeta</label>
+              <input type="text" id="pianeta" name="pianeta" [ngModel]="heroForm.pianeta" class="form-control" #pianeta="ngModel" minlength="5">
+              <p *ngIf="pianeta.invalid" class="alert alert-danger" role="alert">minimo 5 caratteri</p>
+            </div>
+            <div class="form-group">
+              <label for="debolezza">Debolezza</label>
+              <input type="text" id="debolezza" name="debolezza" [ngModel]="heroForm.debolezza" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary mt-3" [disabled]="f.invalid">Invia</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+
+
+
+
