@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "body": "Sit minim deserunt enim enim nisi. Eiusmod incididunt dolore et ea anim. Non exercitation id voluptate et velit quis anim officia fugiat esse laborum nisi fugiat non.",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": true
+    },
+    {
+      "id": 2,
+      "body": "Sit minim deserunt enim enim nisi. Eiusmod incididunt dolore et ea anim. Non exercitation id voluptate et velit quis anim officia fugiat esse laborum nisi fugiat non.",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": true
+    },
+    {
+      "id": 3,
+      "body": "Sit minim deserunt enim enim nisi. Eiusmod incididunt dolore et ea anim. Non exercitation id voluptate et velit quis anim officia fugiat esse laborum nisi fugiat non.",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": true
+    },
+    {
+      "id": 4,
+      "body": "Sit minim deserunt enim enim nisi. Eiusmod incididunt dolore et ea anim. Non exercitation id voluptate et velit quis anim officia fugiat esse laborum nisi fugiat non.",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": false
+    },
+    {
+      "id": 5,
+      "body": "Sit minim deserunt enim enim nisi. Eiusmod incididunt dolore et ea anim. Non exercitation id voluptate et velit quis anim officia fugiat esse laborum nisi fugiat non.",
+      "title": "Dolor velit sint tempor culpa cupidatat ipsum do ad tempor eiusmod.",
+      "active": false
+    }
+  ],
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$x1hzw9MgAjC836hJ4kX6C.13Vb/PtHvvljikMj98ViMGIjYA8EJF2",
+      "id": 1
+    }
+  ]
+}
