@@ -7,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { ActivePostsComponent } from './active-posts/active-posts.component';
 import { InactivePostsComponent } from './inactive-posts/inactive-posts.component';
 import { PostCardComponent } from './post-card/post-card.component';
-import { DettagliPostComponent } from './dettagli-post/dettagli-post.component';
 import { UsersComponent } from './users/users.component';
 import { EvidenziaDirective } from './directives/evidenzia.directive';
 import { UsersDetailsComponent } from './users-details/users-details.component';
@@ -21,7 +20,6 @@ import { MaiuscoloPipe } from './pipes/maiuscolo.pipe';
     ActivePostsComponent,
     InactivePostsComponent,
     PostCardComponent,
-    DettagliPostComponent,
     UsersComponent,
     EvidenziaDirective,
     UsersDetailsComponent,
