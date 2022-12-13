@@ -1,0 +1,9 @@
+<div class="card bg-light m-5" style="width: 18rem;">
+  <img src="http://image.tmdb.org/t/p/w500/{{film.poster_path}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h2 class="p-2 text-center">{{film.title}}</h2>
+    <div [class.text-danger]="liked" class="fs-4 btn" (click)="buttonLike(film.id)">
+     &#9829;
+    </div>
+  </div>
+</div>

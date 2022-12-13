@@ -1,0 +1,14 @@
+<div class="bg-danger"><h1 class="text-light mb-0 ms-5">Netflix</h1></div>
+<div class="bg-dark">
+    <div class="row gx-0">
+        <div class="col-md-2 border-end border-white">
+            <ul class="p-3">
+                <li class="p-2"><a class="text-decoration-none text-light" [routerLink]="['/movies']">Movies</a></li>
+                <li class="p-2"><a class="text-decoration-none text-light" [routerLink]="['user']">User</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10 text-dark p-0">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
